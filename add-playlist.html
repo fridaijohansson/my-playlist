@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add band</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        margin: auto;
+        width: 1000px;
+    }
+    header{
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        font-style: italic;
+        font-size: 2rem;
+        color: white;
+        background-color: darkred;
+    }
+    aside{
+        float: left;
+        list-style-type: none;
+        width: 200px;
+        height: auto;
+        padding: 20px;
+    }
+    main{
+        text-align: center;
+        display: block;
+        width: 400px;
+        margin: auto;
+
+    }
+
+    form{
+        margin: auto;
+        width: 300px;
+        padding-top: 30px;
+    }
+    form input{
+        margin: 10px;
+        width: 200px;
+        font-size: 24px;
+    }
+    nav{
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+        border: solid 1px black;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Playlist</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/playlists/add-playlist">Add Playlist</a></li>
+            <li><a href="/bands/add">Add Band</a></li>
+            <li><a href="/bands">Top 10 charts</a></li>
+        </ul>
+    </nav>
+
+    <aside width="200px">
+        <h3>Other playlists!</h3>
+    </aside>
+
+    <main>
+        
+        <form action="/playlists/add-playlist" method="post">
+            <input type="text" name ="name" placeholder="name">
+            <br>
+            <button>Choose image</button>
+            <input type="submit" value="save">
+        </form>
+    </main>
+        
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
